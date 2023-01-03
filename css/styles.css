@@ -136,7 +136,8 @@ input[type="submit"]:hover {
 /* contact form */
 #contact-page {
   text-align: center;
-  height: 100vh;
+  height: 110vh;
+  padding: 2rem 0;
 }
 form {
   display: flex;
