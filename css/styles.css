@@ -130,7 +130,18 @@ input[type="submit"]:hover {
   opacity: 0.8;
   border: 5px solid var(--white);
 }
-
+/* contact form */
+#contact-page {
+  text-align: center;
+  height: 100vh;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* About page */
 .about_main--page {
   display: flex;
   flex-direction: column;
