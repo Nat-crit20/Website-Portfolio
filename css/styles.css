@@ -75,6 +75,7 @@ main a:active {
   color: var(--link-color-secondary);
   text-decoration: none;
 }
+/* home page */
 .profile-home {
   display: flex;
   justify-content: center;
@@ -88,6 +89,7 @@ main a:active {
   padding-left: 50px;
   width: 30%;
 }
+/* Work page */
 .projects__main {
   text-align: center;
   display: flex;
@@ -111,6 +113,7 @@ main a:active {
 table {
   margin: 20px;
 }
+/* button styles */
 input[type="submit"],
 .button {
   background-color: var(--link-color-primary);
@@ -235,7 +238,15 @@ footer {
   header {
     font-size: 12px;
   }
-
+  .profile-home {
+    height: 100vh;
+    flex-direction: column;
+  }
+  .profile-intro {
+    text-align: center;
+    padding: 0px;
+    width: 70%;
+  }
   .grid {
     display: grid;
     grid-template-columns: 200px;
@@ -243,9 +254,8 @@ footer {
   }
 }
 @media all and (min-width: 500px) and (max-width: 750px) {
-  main {
-    height: 600px;
-    padding: 20px;
+  .profile-intro {
+    width: 60%;
   }
   .grid {
     display: grid;
@@ -255,7 +265,7 @@ footer {
 }
 @media all and (max-width: 750px) {
   main {
-    height: 600px;
+    height: 120vh;
     padding: 20px;
   }
 }
