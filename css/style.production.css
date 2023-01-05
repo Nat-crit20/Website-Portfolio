@@ -19,6 +19,7 @@
 body {
   font-family: "Lato", sans-serif;
 }
+/* basic nav */
 header {
   background-color: #fff;
   color: #1c053a;
@@ -45,20 +46,20 @@ header {
   display: inline-block;
   margin-left: 15px;
 }
-header a {
+.nav-list__item {
   -webkit-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
 }
-header a:hover {
-  text-decoration: overline;
+.nav-list__item:hover {
   color: #f46552;
 }
-
+/* main styles */
 main {
   background-color: #222c43;
   color: #fff;
   min-height: 500px;
+  padding: 2rem 0;
 }
 main h1 {
   margin: 0;
@@ -165,7 +166,7 @@ input[type="submit"] {
   margin: 10px;
   width: 10rem;
   padding: 0.5rem 2rem;
-  border-radius: 3px;
+  border-radius: 10px;
   font-family: inherit;
   border: none;
   color: #fff;
@@ -180,7 +181,7 @@ input[type="submit"] {
   margin: 10px;
   width: 10rem;
   padding: 0.5rem 2rem;
-  border-radius: 3px;
+  border-radius: 10px;
   font-family: inherit;
   border: none;
   color: #fff;
@@ -199,9 +200,15 @@ input[type="submit"]:hover {
 }
 /* contact form */
 #contact-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
   text-align: center;
   height: 110vh;
-  padding: 2rem 0;
 }
 form {
   display: -webkit-box;
@@ -217,6 +224,10 @@ form {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 2rem 0;
+}
+textarea {
+  margin-bottom: 2rem;
 }
 /* About page */
 .about_main--page {
@@ -241,123 +252,6 @@ form {
   width: 100%;
 }
 
-@-webkit-keyframes color-change-first {
-  0% {
-    fill: #f46552;
-  }
-  25% {
-    fill: #6a6aff;
-  }
-  75% {
-    fill: #fff;
-  }
-  100% {
-    fill: #f46552;
-  }
-}
-
-@keyframes color-change-first {
-  0% {
-    fill: #f46552;
-  }
-  25% {
-    fill: #6a6aff;
-  }
-  75% {
-    fill: #fff;
-  }
-  100% {
-    fill: #f46552;
-  }
-}
-@-webkit-keyframes color-change-second {
-  0% {
-    fill: #fff;
-  }
-  25% {
-    fill: #f46552;
-  }
-  75% {
-    fill: #6a6aff;
-  }
-  100% {
-    fill: #fff;
-  }
-}
-@keyframes color-change-second {
-  0% {
-    fill: #fff;
-  }
-  25% {
-    fill: #f46552;
-  }
-  75% {
-    fill: #6a6aff;
-  }
-  100% {
-    fill: #fff;
-  }
-}
-@-webkit-keyframes color-change-third {
-  0% {
-    fill: #6a6aff;
-  }
-  25% {
-    fill: #fff;
-  }
-  75% {
-    fill: #f46552;
-  }
-  100% {
-    fill: #6a6aff;
-  }
-}
-@keyframes color-change-third {
-  0% {
-    fill: #6a6aff;
-  }
-  25% {
-    fill: #fff;
-  }
-  75% {
-    fill: #f46552;
-  }
-  100% {
-    fill: #6a6aff;
-  }
-}
-.st1 {
-  -webkit-animation-name: color-change-third;
-  animation-name: color-change-third;
-  -webkit-animation-duration: 3s;
-  animation-duration: 3s;
-
-  -webkit-animation-iteration-count: infinite;
-
-  animation-iteration-count: infinite;
-  -webkit-animation-timing-function: ease;
-  animation-timing-function: ease;
-}
-.st6 {
-  -webkit-animation-name: color-change-first;
-  animation-name: color-change-first;
-  -webkit-animation-duration: 3s;
-  animation-duration: 3s;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  -webkit-animation-timing-function: ease;
-  animation-timing-function: ease;
-}
-.st2 {
-  -webkit-animation-name: color-change-second;
-  animation-name: color-change-second;
-  -webkit-animation-duration: 3s;
-  animation-duration: 3s;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  -webkit-animation-timing-function: ease;
-  animation-timing-function: ease;
-}
 /* footer */
 
 footer {
