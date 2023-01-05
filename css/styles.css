@@ -159,67 +159,6 @@ form {
   width: 100%;
 }
 
-@keyframes color-change-first {
-  0% {
-    fill: var(--link-color-primary);
-  }
-  25% {
-    fill: var(--link-color-secondary);
-  }
-  75% {
-    fill: var(--white);
-  }
-  100% {
-    fill: var(--link-color-primary);
-  }
-}
-@keyframes color-change-second {
-  0% {
-    fill: var(--white);
-  }
-  25% {
-    fill: var(--link-color-primary);
-  }
-  75% {
-    fill: var(--link-color-secondary);
-  }
-  100% {
-    fill: var(--white);
-  }
-}
-@keyframes color-change-third {
-  0% {
-    fill: var(--link-color-secondary);
-  }
-  25% {
-    fill: var(--white);
-  }
-  75% {
-    fill: var(--link-color-primary);
-  }
-  100% {
-    fill: var(--link-color-secondary);
-  }
-}
-.st1 {
-  animation-name: color-change-third;
-  animation-duration: 3s;
-
-  animation-iteration-count: infinite;
-  animation-timing-function: ease;
-}
-.st6 {
-  animation-name: color-change-first;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease;
-}
-.st2 {
-  animation-name: color-change-second;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease;
-}
 /* footer */
 
 footer {

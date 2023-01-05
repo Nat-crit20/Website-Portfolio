@@ -10,14 +10,73 @@
           xml:space="preserve"
         >
           <style type="text/css">
+          :root {
+  --white: #fff;
+  --text-color: #1c053a;
+  --link-color-primary: #f46552;
+  --link-color-secondary: #6a6aff;
+  --background-main: #222c43;
+}
+          
+@keyframes color-change-first {
+  0% {
+    fill: var(--link-color-primary);
+  }
+  25% {
+    fill: var(--link-color-secondary);
+  }
+  75% {
+    fill: var(--white);
+  }
+  100% {
+    fill: var(--link-color-primary);
+  }
+}
+@keyframes color-change-second {
+  0% {
+    fill: var(--white);
+  }
+  25% {
+    fill: var(--link-color-primary);
+  }
+  75% {
+    fill: var(--link-color-secondary);
+  }
+  100% {
+    fill: var(--white);
+  }
+}
+@keyframes color-change-third {
+  0% {
+    fill: var(--link-color-secondary);
+  }
+  25% {
+    fill: var(--white);
+  }
+  75% {
+    fill: var(--link-color-primary);
+  }
+  100% {
+    fill: var(--link-color-secondary);
+  }
+}
             .st0 {
               fill: #666666;
             }
             .st1 {
               fill: #2d2d2d;
+               animation-name: color-change-third;
+  animation-duration: 3s;
+
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
             }
             .st2 {
               fill: #333333;
+              animation-name: color-change-second;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
             }
             .st3 {
               fill: #4d4d4d;
@@ -30,6 +89,10 @@
             }
             .st6 {
               fill: #b3b3b3;
+              animation-name: color-change-first;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
             }
             .st7 {
               fill: url(#SVGID_1_);
